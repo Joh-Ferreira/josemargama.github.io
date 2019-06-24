@@ -1,10 +1,19 @@
 @charset "UTF-8";
 
 	body{
-		background-color: white;
+		background-color: #dddddd;
 		color: rgba(0,0,0,1);
 	}
-	h1{
+
+	div#interface{
+		width: 900px;
+		margin: -20px auto 0px auto;
+		background-color:#ffffff;
+		padding: 10px;
+		box-shadow:  0px 0px 10px rgba(0,0,0,.5);
+	}
+
+	/*h1{
 		font-family: arial;
 		font-size: 24pt;
 		color: grey;
@@ -14,10 +23,16 @@
 	h2{
 		text-indent: 50px;
 
-	}
+	}*/
 	p{
 		text-align: justify;
 		text-indent: 50px;
+	}
+
+	header#cabecalho img#icone{
+		position: absolute;
+		left: 1150px;
+		top: 50px;
 	}
 
 	/* Formatação de Imagens*/
@@ -57,7 +72,7 @@
 		text-transform: uppercase;
 		position: absolute;
 		top: -20px;
-		left: 400px;
+		left: 900px;
 	}
 
 	nav#menu li{
