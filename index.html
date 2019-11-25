@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8"/>
-	<title> JOSEMAR GAMA</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-	<div id="interface">
-	
-	<header id="cabecalho">
-		<hgroup>
-			<h1> JOSEMAR GAMA</h1>
-			<h2>Meu Portifólio (EM DESENVOLVIMENTO)</h2>
-		</hgroup>
-	
-	<img id="icone" src="imagens/eu1.jpg"/>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+        <title>Dashboard Temperatura</title>
+    </head>
+    <body>
+        <div class="login">
+            <div class="loginform">
 
-	<nav id="menu">
-		<h1>Menu</h1>
-		<ul>
-			<li><a href="index.html">INICIO</a></li>
-			<li><a href="quem.html">SOBRE MIM</a></li>
-			<li><a href="fotos.html">PROJETOS</a></li>
-			<li><a href="fotos.html">BLOG</a></li>
-		</ul>
-	</nav>
+                <div class="loginform-wrapper">
+                    <div class="login-title">
+                        <h2>Log in</h2>
+                        <a href="#">Cadastre-se</a>
 
-	</header>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email"
+                                aria-describedby="emailHelp"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control"
+                                id="senha" placeholder="Senha">
+                        </div>
+                        <button type="button" class="btn">Login</button>
+                    </form>
 
-	<section id="principal">
-		<hgroup>
-			<h3>HOME > APRESENTAÇÃO</h3>
-			<h3>Por Josemar Gama</h3>
-			<h1>Conhecendo o Curso</h1>	
-		</hgroup>
-
-	<h2>O que é</h2>
-	<p><b>Ciência da computação</b> é a ciência que estuda as técnicas, metodologias e instrumentos computacionais, que automatiza processos e desenvolve soluções baseadas no uso do processamento de dados. Não se restringe apenas ao estudo dos algoritmos, suas aplicações e implementação na forma de software, extrapolando para todo e qualquer conhecimento pautado no computador, que envolve também a telecomunicação, o banco de dados e as aplicações tecnológicas que possibilitam atingir o tratamento de dados de entrada e saída, de forma que se transforme em informação. Assim, a Ciência da Computação também abrange as técnicas de modelagem de dados e os protocolos de comunicação, além de princípios que abrangem outras especializações da área.</p>
-	<figure class="fotolegenda">
-		<img src="imagens/computacao.jpg"/>
-		<figcaption>
-			<h3>Computação o futuro da humanidade!</h3>
-		</figcaption>
-	</figure>
-	<h2>Classificação</h2>
-	<p>Enquanto ciência, classifica-se como ciência exata, apesar de herdar elementos da lógica filosófica aristotélica, tendo por isto um papel importante na formalização matemática de algoritmos, como forma de representar problemas decidíveis, i.e., os que são susceptíveis de redução a operações elementares básicas, capazes de serem reproduzidas através de um dispositivo qualquer capaz de armazenar e manipular dados. Um destes dispositivos é o computador digital, de uso generalizado, nos dias de hoje. Também de fundamental importância para a área de Ciência da Computação são as metodologias e técnicas ligadas à implementação de software que abordam a especificação, modelagem, codificação, teste e avaliação de sistemas de software.</p>
-	[Vídeo]
-	</section>
-
-	<aside id="lateral">
-	<h2>Tópicos recentes</h2>
-	<p>Os estudos oriundos da Ciência da Computação podem ser aplicados em qualquer área do conhecimento humano em que seja possível definir métodos de resolução de problemas baseados em repetições previamente observadas. Avanços recentes na Ciência da Computação têm impactado fortemente a sociedade contemporânea, em particular as aplicações relacionadas às áreas de redes de computadores, Internet, Web e computação móvel que têm sido utilizadas por bilhões de pessoas ao redor do globo.</p>
-	[Vídeo]
-	</aside>
-	<footer id="rodape">
-	<p>Copyright&copy 2019 by Josemar Gama </br>	
-	 	<a href="https://www.facebook.com/Jo0hFerreira" target="_blank">Facebook</a> | <a href="https://www.instagram.com/j00h_ferreira/" target="_blank">Instagram </a></p>
-	</footer>
-</div>	
-</body>
-</html> 
+                </div>
+            </div>
+            <div class="banner-login">
+                <img src="/img/temperaturemonitor.png" alt="">
+                <h2>Monitor de Temperatura do Datacenter</h2>
+            </div>
+        </div>
+        <script src="/plugins/bootstrap/js/bootstrap.min.js"> </script>
+        <script src="/plugins/fontawesome/js/all.min.js"></script>
+        <script type="text/javascript" src="/js/paho_mqtt/paho-mqtt-min.js"></script>
+        <script type="text/javascript" src="/js/paho_mqtt/paho-mqtt.js"></script>
+        <script type="text/javascript" src="/js/paho_mqtt/sub-paho.js"></script>
+        <script>
+            let button = document.querySelector('form button.btn')
+            button.addEventListener("click", () => {
+                location.href =  "views/dashboard.html"
+            })
+        </script>
+    </body>
+</html>
