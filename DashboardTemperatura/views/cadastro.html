@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/all.css">
+        <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+        <title>Dashboard Temperatura</title>
+    </head>
+    <body>
+        <div class="register-parent">
+            <div class="register">
+                <form>
+                    <div class="form-group">
+                      <label for="name">Nome</label>
+                      <input type="text" class="form-control" id="name" placeholder="Informe seu nome">
+                    </div>
+                    <div class="form-group">
+                      <label for="lastname">Sobrenome</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Informe seu sobrenome">
+                    </div> 
+                    <div class="form-group">
+                      <label for="age">Idade</label>
+                      <input type="text" class="form-control" id="age" placeholder="Informe sua idade">
+                    </div> 
+                    <div class="form-group">
+                      <label for="gender">Genero</label>
+                        <select class="form-control" id="gender">
+                            <option>Selecione</option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Informe seu E-mail">
+                    </div>  
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Senha</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+
+        </div>
+        <script src="../plugins/bootstrap/js/bootstrap.min.js"> </script>
+        <script src="../plugins/fontawesome/js/all.min.js"></script>
+        <script type="text/javascript" src="../js/paho_mqtt/paho-mqtt-min.js"></script>
+        <script type="text/javascript" src="../js/paho_mqtt/paho-mqtt.js"></script>
+        <script type="text/javascript" src="../js/paho_mqtt/sub-paho.js"></script>
+    </body>
+</html>
