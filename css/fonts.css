@@ -15,3 +15,9 @@
     src: url(../fonts/Ubuntu-Light.ttf);
     font-weight: lighter;
 }
+
+@font-face {
+    font-family: 'Mario';
+    src: url(../fonts/mario.ttf);
+    font-weight: lighter;
+}
