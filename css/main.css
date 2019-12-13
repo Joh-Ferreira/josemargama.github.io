@@ -81,37 +81,36 @@ div#monitor {
     margin-top: 20px;
 }
 
-div#ajax-content button{
+div#ajax-content button {
     background: linear-gradient(135deg, #01589F, #FEEF56);
     color: #fff;
 }
 
-div#ajax-content button:hover{
+div#ajax-content button:hover {
     transform: scale(1.05);
     transition: 0.2s;
 }
 
-div#ajax-content label{
+div#ajax-content label {
     font-size: 15px;
     color: #72777a;
 }
 
-div#ajax-content svg{
+div#ajax-content svg {
     cursor: pointer;
 }
 
-.conteudo-dinamico{
+.conteudo-dinamico {
     padding: 20px;
-} 
+}
 
-div.titulo{
+div.titulo {
     padding: 5px 0;
 }
 
-div.titulo h2{
+div.titulo h2 {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 300px;
     color: #72777a;
 }
-

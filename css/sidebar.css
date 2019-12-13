@@ -1,17 +1,19 @@
 div.flex-dashboard {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 900px;
     width: 100%;
 }
 
 sidebar {
     display: block;
     height: 100%;
-    width: 300px;
+    width: 280px;
     background-color: white;
-    /*overflow-y: auto;*/
+    overflow-y: auto;
+    padding: 0px 10px;
 }
+
 sidebar::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
@@ -26,28 +28,6 @@ sidebar::-webkit-scrollbar {
 sidebar::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
-}
-
-sidebar .sidebar-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 30px;
-    height: 90px;
-    border: 1px solid rgba(0, 0, 0, .0625);
-    border-right: 0px;
-}
-
-sidebar .sidebar-title img {
-    height: 50px;
-    width: 50px;
-}
-
-sidebar .sidebar-title h2 {
-    font-size: 15px;
-    margin-top: 8px;
-    color: #72777a;
 }
 
 div .menu {
@@ -67,13 +47,14 @@ div.menu ul li {
 }
 
 div.menu ul li svg {
-    color: #01589F;
+    color: #1E597B;
     font-size: 20px;
 }
 
 div.menu ul li a {
     color: #72777a;
     margin-left: 20px;
+    padding: 0px 10px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
