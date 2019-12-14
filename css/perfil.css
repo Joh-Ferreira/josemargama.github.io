@@ -1,0 +1,69 @@
+div.perfil-geral{
+    padding: 10px 0px;
+}
+
+div.perfil-geral{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+div.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+div.perfil-img{
+    width: 40%;
+}
+
+div.perfil-formulario{
+    width: 60%;
+}
+
+div.perfil-formulario button{
+    margin-top: 10px;
+    background: linear-gradient(130deg, #01589F, #FEEF56);
+    color: #fff;
+    border: none;
+}
+
+div.perfil-formulario button:hover{
+    border: none;
+    color: #fff;
+    transform: scale(1.10);
+    transition: .2s;
+}
+
+div.perfil-formulario label{
+    font-size: 15px;
+}
+
+div.perfil-formulario input,
+div.perfil-formulario select{
+    font-size: 14px;    
+}
+
+div.custom-file{
+    margin-top: 10px;
+}
+
+div .imagem{
+    height: 500px;
+    width: 400px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    background-image: url(/img/avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgba(1, 88, 159, 0.3);
+    border-radius: 5px;
+}
+
